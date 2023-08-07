@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/608e9d3ec2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Language Translator</title>
+</head>
+<body>
+    <form action="translator.php" method="post">
+    <div class="container">
+        <div class="box">
+            <div class="controls">
+                <select></select>
+                <i class="fa-solid fa-arrow-right-arrow-left swap"></i>
+                <select></select>
+            </div>
+            <div class="area">
+                <div class="text">
+                    <textarea class="originalText" placeholder="Enter text" ></textarea>
+                    <div class="icons">
+                        <i id="From" class="fas fa-volume-up"></i>
+                        <i id="From" class="fas fa-copy"></i>
+                    </div>
+                </div>
+                <div class="text">
+                    <textarea class="translatedText" placeholder="Translation" readonly disabled></textarea>
+                    <div class="icons">
+                        <i id="To" class="fas fa-volume-up"></i>
+                        <i id="To" class="fas fa-copy"></i>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <button type="submit" name="translate" >Translate Text</button>
+        <button type="submit" name="history" formaction="history.php">History</button>
+    </div>
+</form>
+</div>
+<script src="JS/countries.js"></script>
+<script src="JS/main.js"></script>
+</body>
+</html>
